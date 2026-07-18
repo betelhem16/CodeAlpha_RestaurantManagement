@@ -8,6 +8,7 @@
   "typecheck": "tsc --noEmit",
   "test": "vitest run"
 },
+ 
   "repository": {
     "type": "git",
     "url": "git+https://github.com/betelhem16/CodeAlpha_RestaurantManagement.git"

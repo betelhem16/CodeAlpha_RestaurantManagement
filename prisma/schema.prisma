@@ -24,7 +24,7 @@ enum TableStatus {
 }
 model MenuItem {
   id         Int      @id @default(autoincrement())
-  name       String
+  name       String     @unique
   price      Float
   isAvailable Boolean @default(true)
   recipe     Recipe[]
@@ -33,7 +33,7 @@ model MenuItem {
 
 model InventoryItem {
   id                Int      @id @default(autoincrement())
-  name              String
+  name              String   @unique 
   quantityInStock   Float
   unit              String
   lowStockThreshold Float    @default(10)
